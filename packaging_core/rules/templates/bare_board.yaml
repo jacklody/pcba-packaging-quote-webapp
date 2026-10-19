@@ -1,0 +1,12 @@
+version: "2026-10-13"
+template: bare_board
+source: 包装计算模板改造
+product_class: bare_board
+logistics:
+  ship_mode: parcel
+  default_pallet: false
+packaging:
+  anti_static_bag: true
+  inner_buffer_candidates:
+    - epe_solid
+    - eva_cnc

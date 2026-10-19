@@ -1,0 +1,9 @@
+version: "2026-10-13"
+name: corrugated
+factory_factor: 0.65
+fixed_processing_yuan: 1.5
+material_yuan_per_m2: 14.35
+waste_factor: 1.05
+blank_area_formula: (2 * (L + W)) * (W + H) * waste_factor
+confidence: A
+formula: max(area_m2 * material_yuan_per_m2 / factory_factor, area_m2 * material_yuan_per_m2 + fixed_processing_yuan)

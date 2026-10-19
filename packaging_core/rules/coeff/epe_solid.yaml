@@ -1,0 +1,5 @@
+version: "2026-10-13"
+name: epe_solid
+unit_price_per_m3: 316.86
+confidence: B
+formula: volume_m3 * unit_price_per_m3

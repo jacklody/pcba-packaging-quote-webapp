@@ -1,0 +1,15 @@
+version: "2026-10-13"
+name: packaging_rules_chain
+rules:
+  - id: classify_product
+    description: 按产品类型选择包装模板
+  - id: select_inner_packaging
+    description: 按重量、尺寸、脆弱性和是否允许开模选择内包装
+  - id: calculate_box_cost
+    description: 计算纸箱成本
+  - id: calculate_pallet_and_accessories
+    description: 大板/组件类默认木托盘整托发运
+  - id: calculate_freight
+    description: 运费完整纳入成本引擎
+  - id: optimize_solution
+    description: 枚举 N × 每托箱数 × 堆叠层数并输出最优方案

@@ -1,0 +1,18 @@
+# 刀卡包装几何参数
+divider:
+  # 单件插格间隙(mm)，含刀卡厚度与缓冲，真实案例反推：35mm板厚+15=50，600/50=12/行
+  clearance_mm: 15
+  # 刀卡板材厚度(mm)，用于3D示意
+  card_thickness_mm: 3
+
+# 自动设计箱参数：内尺寸=格距×数量+2×端部余量；外尺寸=内尺寸+2×壁厚
+carton:
+  wall_thickness_mm: 5      # 五层瓦楞单面壁厚
+  end_margin_mm: 3          # 刀卡格栅端部预留
+  areal_weight_kg_per_m2: 0.55  # 空箱面密度，用于估算毛重
+  max_outer_height_mm: 400  # 设计箱最大外高，超过需人工确认
+
+# EPE/EPS 成型内衬参数
+foam:
+  thickness_mm: 20          # 缓冲厚度（单侧）
+  fit_clearance_mm: 2       # 内腔与箱壁配合间隙（单侧）

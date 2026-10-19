@@ -1,0 +1,14 @@
+version: "2026-10-13"
+template: assembly
+product_class: assembly
+logistics:
+  ship_mode: pallet
+  default_pallet: true
+  pallet_size: 1100x1100
+  max_pallet_height_mm: 1500
+  max_pallet_weight_kg: 700
+packaging:
+  inner_buffer_candidates:
+    - eps_molded
+    - epe_solid
+  allow_mold_default: true

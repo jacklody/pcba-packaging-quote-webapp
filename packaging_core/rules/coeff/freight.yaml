@@ -1,0 +1,14 @@
+version: "2026-10-13"
+name: freight
+volume_divisor: 6000
+pricing_mode: 全量段价非累进
+description: 跨越费率为全量段价，不是累进段价；需检测运费悬崖。
+billable_weight: max(actual_weight_kg, volume_cm3 / volume_divisor, start_weight_kg)
+default_rate:
+  first_weight_kg: 1
+  first_price: 20
+  start_weight_kg: 15
+  minimum_charge: 133
+  segment_thresholds: [1, 10, 30, 50, 100, 300, 500, 1000, 2000]
+  segment_prices: [10.8, 10.8, 10.8, 9.9, 9.0, 8.1, 8.1, 8.1, 8.1]
+  volume_divisor: 6000

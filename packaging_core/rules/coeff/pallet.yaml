@@ -1,0 +1,13 @@
+version: "2026-10-13"
+name: pallet
+wood_pallet:
+  purchase_price: 80
+  reuse_count: 5
+  amortized_price: 16
+stretch_film:
+  unit_price_per_kg: 9
+  kg_per_pallet: 0.8
+  price_per_pallet: 7.2
+packing_band:
+  price_per_pallet: 1.0
+confidence: B

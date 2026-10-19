@@ -1,0 +1,6 @@
+version: "2026-10-13"
+name: eps_molded
+base_fee: 47.30
+vol_fee: 318.5
+confidence: B
+formula: projected_area_m2 * (base_fee + vol_fee * height_m)
